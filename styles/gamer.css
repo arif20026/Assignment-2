@@ -146,6 +146,7 @@ div .list {
     border: 2px solid blue;
     /* align-items: center; */
     text-align: center;
+    height: 694px;
 }
 
 .online-funny-games-imgs {
@@ -192,17 +193,9 @@ main div img:hover {
 }
 
 
-.play-btn {
-    display: none;
-}
 
-main div img:hover+.play-btn {
-    display: block;
-    color: blue;
-    width: 300px;
-    height: 100px;
 
-}
+
 
 .watch-now1 {
     display: none;
@@ -220,6 +213,7 @@ main div img:hover+.play-btn {
 .online-fg-images1:hover+.watch-now1 {
     display: block;
 }
+
 
 .watch-now2 {
     display: none;
@@ -275,15 +269,30 @@ main div img:hover+.play-btn {
 @media screen and (max-width:576px) {
     *{
         margin: 0px;
+        align-items: center;
     }
-    .gamer,.list ,.banner,.online-funny-games-imgs {
+    .gamer,.list ,.banner,.online-funny-games,.online-funny-games-imgs {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .banner img{
+        width: 355px;
     }
 
-   
+   .list li{
+    padding-bottom: 36px;
+   }
+   .banner h3,h2,p{
+    padding: 20px;
+   }
+   .list{
+    margin-top: 64px;
+    margin-bottom: 64px;
+   }
 
     .nav-gamer-section {
         padding: 0px;
