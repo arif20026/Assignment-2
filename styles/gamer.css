@@ -273,6 +273,9 @@ main div img:hover+.play-btn {
 }
 
 @media screen and (max-width:576px) {
+    *{
+        margin: 0px;
+    }
     .gamer,.list ,.banner,.online-funny-games-imgs {
         flex-direction: column;
         align-items: center;
